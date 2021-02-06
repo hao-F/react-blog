@@ -1,21 +1,23 @@
 import React from 'react'
-// import { Provider } from 'react-redux'
 import {BrowserRouter, Redirect, Route } from 'react-router-dom'
-// import store from "./store";
 import Base from './layout/index'
 import login from './pages/login/login'
+import './common/common.scss'
+
 
 class App extends React.Component {
   render() {
     return (
       // <Provider store={store}>
+      <div className="container">
         <BrowserRouter>
-          <Route to="/" r>
+          <Route to="/">
             <Route path="/index" component={Base} />
-            <Redirect from="/" to="/index"/>
+            <Redirect from="/" exact to="/index"/>
           </Route>
           <Route path="/login" component={login} />
         </BrowserRouter>
+      </div>
       // </Provider>
     )
   }
