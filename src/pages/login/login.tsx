@@ -4,16 +4,10 @@ import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { withRouter } from 'react-router-dom'
 import './login.scss'
 
-class Login extends Component<any,any> {
-  constructor(T:any) {
-    super(T);
-    this.state = {
-
-    }
-  }
+class Login extends Component<any> {
 
   onFinish(values: any) {
-    console.log(this)
+    console.log(values)
     this.props.history.push("/index");
   }
 
