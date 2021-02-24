@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import './layout.css'
+import './layout.scss'
 import { Route, Link } from 'react-router-dom'
 import home from '../pages/home/index'
 import set from '../pages/set/index'
